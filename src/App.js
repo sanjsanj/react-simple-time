@@ -13,15 +13,19 @@ class App extends Component {
   }
 
   setTime() {
-    const hours = new Date().getHours();
-    const minutes = new Date().getMinutes();
-    const seconds = new Date().getSeconds();
+    const hours = this.setTwoDigits(new Date().getHours());
+    const minutes = this.setTwoDigits(new Date().getMinutes());
+    const seconds = this.setTwoDigits(new Date().getSeconds());
 
     this.setState({
       hours,
       minutes,
       seconds
     });
+  }
+
+  setTwoDigits(number) {
+    return ("0" + number).slice(-2);
   }
 
   render() {
