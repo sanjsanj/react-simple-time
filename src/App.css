@@ -1,3 +1,15 @@
+body {
+  -webkit-animation: colorchange 60s infinite;
+}
+
+@-webkit-keyframes colorchange
+{
+  0%   {background: #e77f95;}
+  33%  {background: #f8f1e6;}
+  66%  {background: #f7d799;}
+  100% {background: #e77f95;}
+}
+
 .st__container {
   display: flex;           /* establish flex container */
   flex-direction: column;  /* make main axis vertical */
@@ -11,4 +23,5 @@
   text-align: center;
   font-weight: 100;
   font-size: 210px;
+  color: #fff;
 }
