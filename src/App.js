@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   setTime() {
-    const hours = this.setTwoDigits(new Date().getHours());
+    const hours   = this.setTwoDigits(new Date().getHours());
     const minutes = this.setTwoDigits(new Date().getMinutes());
     const seconds = this.setTwoDigits(new Date().getSeconds());
 
