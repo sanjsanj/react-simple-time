@@ -30,8 +30,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        {this.state.hours}:{this.state.minutes}:{this.state.seconds}
+      <div className="st__container">
+        <h1 className="st__time">
+          {this.state.hours}:{this.state.minutes}:{this.state.seconds}
+        </h1>
       </div>
     );
   }
