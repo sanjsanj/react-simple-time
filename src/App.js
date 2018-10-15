@@ -3,10 +3,16 @@ import "./App.css";
 
 class App extends Component {
   componentWillMount() {
-    this.timer();
+    this.setTime();
   }
 
-  timer() {
+  componentDidMount() {
+    setInterval(() => {
+      this.setTime();
+    }, 1000);
+  }
+
+  setTime() {
     const hours = new Date().getHours();
     const minutes = new Date().getMinutes();
     const seconds = new Date().getSeconds();
